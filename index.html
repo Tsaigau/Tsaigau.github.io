@@ -1,0 +1,143 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+      <title> My Profile </title>
+  <link rel="Shortcut Icon" type="image/x-icon" href="materials/avedm-6w1g1-001.ico"/>
+  <audio autoplay loop = "loop">
+
+ <source src="materials/02 GHOST (Instrumental).m4a">
+    
+  </audio>
+  <style>
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+
+  #profile {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("materials/FjHIL0.jpg");
+  background-repeat: no-repeat;
+  background-size: 6400px 200px;
+  background-color:rgba(255, 255, 255, 0.1)
+  }
+
+  p {
+  font-size: 32px;
+  line-height: 1.5;
+}
+content{
+  font-size: 32px;
+}
+  #body_1 {
+  background: url("materials/out-transparent-39.gif") no-repeat right bottom;
+  background-size: 500px 500px;
+  margin-right: 200px;
+  background-color:rgba(242, 232, 252, 0.6)
+  
+}
+
+h1,h2,h3,h4,h5,h6,body,p,a,blackquote,code{
+    font-family: Helvetica, "PingFang TC", "Microsoft JhengHei","Microsoft Yahei", sans-serif !important;
+}
+
+
+
+
+
+#block1 {
+  background-color: white;
+  width: 600px;
+  border: 15px solid rgba(253, 253, 215, 1);
+  padding: 50px;
+  margin: auto;
+}
+
+div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+} 
+  
+ .left{float:left; width:33%;}
+  
+  </style>
+
+
+  
+  </head>
+
+
+  <body>
+  <p id="content"></p>
+    <script>
+              function startTime() {
+                const dateObject = new Date()
+                const year = dateObject.getFullYear()
+                const month = dateObject.getMonth() + 1
+                const date = dateObject.getDate()
+                const hour = dateObject.getHours()
+                const min = dateObject.getMinutes()
+                const sec = dateObject.getSeconds()
+
+                // 轉成字串，如果低於10，前面加上'0'
+                const hourString = (hour < 10) ? ('0' + hour) : ('' + hour) 
+                const minString = (min < 10) ? ('0' + min) : ('' + min) 
+                const secString = (sec < 10) ? ('0' + sec) : ('' + sec) 
+                document.getElementById('content').innerHTML = month + "-" + date + "-"+ year + " "+ hourString + ":" + minString + ":" + secString
+              } 
+              setInterval(startTime, 1000)    
+  </script>
+  <div class = "a">
+    <div id = "profile">
+      <h1 style="font-family:verdana;"> Personal Information </h1>
+    </div>
+  </div>
+
+  <div class = "a">
+    <h1> This is me (^ ^) </h1>
+      <img src="materials/IMG_9619.jpeg" alt="Trulli" width="850" height="600" >
+  </div>
+
+  <br>
+
+<div class = "a">
+  <div id = "block1"> <p> I am Ya Wei Tsai. I graduated from <a href = http://www.nhsh.tp.edu.tw/ >Neihu Senior High School</a>. <br>Now i am a senior student studying in National Taiwan University.
+      I major in <a href = http://politics.ntu.edu.tw/>Political Science</a> and double major <a href = http://www.econ.ntu.edu.tw/>Economics</a>. <br>In the next year I will go to the Lund University, which is located in the Sweden, for exchange program for one semester.  </p></div>
+</div>
+
+
+<div class = "a">  
+  <h1 style="font-family:verdana;"> My Hobbies </h1>
+  <p> Basketball:  My favorite basketball team of NBA is <a href = https://www.mavs.com/>Dallas Mavericks</a>. </p>
+  <p> Manga: Here i have a manga list that contains some manga i read recently. (<a href = https://jujutsukaisen.jp/> 咒術迴戰 </a>、<a href = https://kaguya.love/> 輝夜姬想讓人告白〜 </a>、<a href = https://koiuso-anime.com/> 戀愛與謊言 </a>)</p>
+  <p> Vtuber:I watch Vtuber as the replenishment of the energy. <br>Crazy sound from <a href = https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg>Anelia Watson</a>, Slow pace broadcast companying with painting from <a href =  https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg>Ina</a>, and the singing broadcast of <a href = https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A>Suisei</a> and <a href = https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g>Gura</a>, etc. All of them are the channels which i would watch in my leisure time.</p> 
+</div>
+<body id="body_1"></body>
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
